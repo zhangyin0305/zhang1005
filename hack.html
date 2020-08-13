@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="=X-UA-Compatible" content="ie=edge">
+        <title>hack</title>
+        <style>
+            .checkbox{
+                height: 25px;
+                width: 90px;
+            }
+            /* 选中用 input:checked*/
+            .c2{
+                height: 50px;
+                width: 85px;
+                background: url(./image/bb.jpg) no-repeat;
+                background-position: -134px -100px;
+            }
+            .checkbox input:checked+label{
+                background-size: 20px 20px;
+                padding-left: 20px;
+                background-image: url(./image/cc.jpg);
+            }
+            /* .checkbox input+label{
+                background-size: 20px 20px;
+                padding-left: 20px;
+                background-image: url(./image/cc.jpg);
+            } */
+            /* label{
+                cursor: default;
+            } */
+            .checkout {
+                width: 500px;
+                height: 500px;
+                background: black;
+                background-image: url("image/bb.jpg");
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+                background-position: 20px 20px;
+                color: wheat;
+                line-height: 40px;
+                text-align: center;
+            }
+            .checkout.checkout1 {
+                background: red;
+            }
+            .checkout.checkout2 {
+                background: blue;
+            }
+            .checkout:hover {
+                background: yellowgreen;
+            }
+            
+
+        </style>
+        <body>
+            <!-- 提交按钮，选中文字效果一样 -->
+            <div class="checkbox">
+                <input type="checkbox" id="handsome">
+                <label for="handsome" >喜欢的</label>
+            </div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+
+            <div class="checkout checkout1 ">
+                11111111111111111
+            </div>
+        </body>
+    </html>

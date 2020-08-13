@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="=X-UA-Compatible" content="ie=edge">
+        <title>text</title>
+        <style>
+            /* 文字折行 */
+            .c1{
+                border: 2px solid transparent;
+                width: 8em;
+                /* overflow-wrap通用换行控制，是否保留单词 */
+                /*  break-word*对单词换行，保持单词完整性*/
+                overflow-wrap:break-word;
+                /* word-break对某些中文属性有特殊理解 ，中文句子也是单词，设置句子是否为一个单位，决定是否换行*/
+                /* keep-all对所有的单词保持完整性，包括中文 */
+                word-break:keep-all;
+                /* white-space空白处是否断行 */
+                /*  nowrap不换行*/
+                white-space: normal;
+            }
+        </style>
+        <body>
+            <div class="c1">
+                This is a long and sjdfksdfhufgjdsfsdfsdggvd sentence.一二三四五六七八九十，这世界是一个巨大的容器，不给希冀，不给阳光谷。
+            </div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+        </body>
+    </html>

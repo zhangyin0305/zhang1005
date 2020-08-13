@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="=X-UA-Compatible" content="ie=edge">
+        <title>background</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+
+            }
+            .c1{
+                height: 35px;
+                width: 100px;
+                margin: 100px auto;
+                border: 5px dotted #000;
+                /* 背景颜色 */
+                background-color: red;  
+                /* background-repeat: repeat-y;背景图平铺 */
+                /* background-position: center;20px 30px背景图的位置 */
+                /* background-size: 20px 30px;背景图的大小 */
+                /* background: url("./image/");插入图片 */
+                /* background: rgb(255.0.0);背景颜色的 */
+            }
+            .c2{
+                /* background: -webkit-linear-gradient(left,red,green);线性渐变色 */
+                /* background:linear-gradient(to right,red,green);标准写法，线性渐变 */
+                /* background:linear-gradient(45deg角度值,red,green);标准写法，线性渐变 */
+                /* background:linear-gradient(135deg,red 10%,green 30%，blue 100%);标准写法，线性渐变，带角度和比例 */
+                /* background:linear-gradient(135deg, transparent 0,transparent 49.5%,green 49.5%,green 50.5%,transparent 50.5%,transparent 100%,); 
+                linear-gradient(45deg, transparent 0,transparent 49.5%,green 49.5%,green 50.5%,transparent 50.5%,transparent 100%,);多背景*/
+                 background-size: 50px;
+            }
+            /* 雪碧图 */
+            .c3{
+                width: 200px;
+                height: 200px;
+                background: url(./image/bb.jpg) no-repeat;
+                background-position: -34px -10px;
+                /* background-size: 261px 113px;将图片缩小 */
+            }
+            .c4{
+                width: 200px;
+                height: 200px;
+                background:url(./image/bb.jpg) no-repeat; ;
+                background-position: -16px -46px;
+                background-size: 261px 113px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+    </body>
+</html>
